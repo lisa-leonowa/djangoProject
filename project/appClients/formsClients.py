@@ -14,7 +14,7 @@ class NewClients(forms.Form):
 
 
 class UpdateClients(forms.Form):
-    phone = forms.CharField(label="Номер делефона:", max_length=12, min_length=10)
+    phone = forms.CharField(label="Номер телефона:", max_length=12, min_length=10)
     remark = forms.CharField(label="Примечание:", required=False, max_length=250)
     def form_values(self):  # метод возвращающий поля формы
         return ['phone', 'remark']
