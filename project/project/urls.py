@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .appClients import viewsClients
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('newClients', viewsClients.newClients),
+    path('updateClients', viewsClients.updateClients),
+    path('searchClients', viewsClients.searchClients),
 ]

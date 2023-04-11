@@ -1,6 +1,6 @@
 from django.http import HttpResponsePermanentRedirect
 from django.shortcuts import render
-from .formsClients import NewClients, UpdateClients, SearchClients
+from project.appClients.formsClients import NewClients, UpdateClients, SearchClients
 
 
 def newClients(request):
