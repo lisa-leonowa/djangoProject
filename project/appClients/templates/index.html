@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}"/>
+    <title>Title</title>
+</head>
+<body>
+    <header class="header">
+        <input>
+        <a href="/">Поиск</a>
+        <select id="selectID">
+            <option value=”last_name”>Фамилия</option>
+            <option value=”phone”>Номер телефона</option>
+        </select>
+        <a href="/newClients">Новый клиент</a>
+    </header>
+    <main>
+        {% for i in clients.values %}
+        <div class="container_client_content">
+            <div class="container_client">
+                <p>ФИО: {{ i.first_name }} {{ i.last_name }} {{ i.full_name }}</p>
+                <button type="button" class="trigger">Подробнее</button>
+            </div>
+            <div class="content">
+                <div class="content_client_value">
+                    <p class="client_value">Фамилия: {{ i.last_name }}</p>
+                    <p class="client_value">Имя: {{ i.first_name }}</p>
+                    <p class="client_value">Отчество: {{ i.full_name }}</p>
+                    <p class="client_value">Пол: {{ i.gender }}</p>
+                    <p class="client_value">Контактный телефон: {{ i.phone }}</p>
+                    <p class="client_value">Примечание: {{ i.remark }}</p>
+                </div>
+                <div class="buttons_clients">
+                    <a href="/updateClients">Изменить информацию</a>
+                    <a href="/">Покупка услуги</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% load static %}
+        <script src="{% static 'scripts/index.js'%}"></script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

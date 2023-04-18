@@ -1,0 +1,38 @@
+{
+    "1": {
+        "first_name": "Елизавета",
+        "last_name": "Леонова",
+        "full_name": "Александровна",
+        "gender": "ж",
+        "phone": "1234512345",
+        "remark": "Тестовый клиент",
+        "services": []
+    },
+    "2": {
+        "first_name": "Алексей",
+        "last_name": "Алексеев",
+        "full_name": "Алексеевич",
+        "gender": "543",
+        "phone": "5432154321",
+        "remark": "0",
+        "services": []
+    },
+    "3": {
+        "first_name": "Виктор",
+        "last_name": "Викторов",
+        "full_name": "Викторович",
+        "phone": "5432154322",
+        "gender": "543",
+        "remark": "изменено",
+        "services": []
+    },
+    "4": {
+        "first_name": "Андрей",
+        "last_name": "Андреев",
+        "full_name": "Андреевич",
+        "phone": "9876543210",
+        "gender": "муж",
+        "remark": "изменено",
+        "services": []
+    }
+}
